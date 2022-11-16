@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,4BAAI;AACZ,OAAO,CAAC,uBAAI",
+    "sources": [
+        "index.scss",
+        "../modules/veriables.scss",
+        "../modules/mixin.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}
