@@ -1,0 +1,135 @@
+.header {
+    min-height: 900px;
+    background-color: $headercolor;
+    &__conteiner {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: url('../images/headerdude.svg');
+        min-height: 900px;
+        background-repeat: no-repeat;
+        max-width: 1440px;
+        background-size: contain;
+        overflow: hidden;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+    &__nav {
+        background-color: $footerColor;
+        position: absolute;
+        top: -830px;
+        left: 0;
+        z-index: 30;
+        transition: top ease .8s;
+    }
+    &__nav-open {
+        top: 0;
+    }
+    &__list {
+        position: relative;
+        min-height: 810px;
+        width: 480px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        @include reset;
+        gap: 80px;
+    }
+    &__nav-close-button {
+        position: absolute;
+        background-image: url('../images/crest.svg');
+        width: 48px;
+        height: 48px;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        z-index: 50;
+    }
+    &__list-item {
+        @include reset;
+        @include buttonsDesctop;
+        color: $aboutColor;
+        cursor: pointer;
+    }
+    &__main-theme {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+    }
+    &__title {
+        @include reset;
+        @include headlineDesctop;
+        margin-bottom: 32px;
+    }
+    &__button {
+        @include reset;
+        @include buttonsDesctop;
+        background-color: $footerColor;
+        color: $aboutColor;
+        text-align: center;
+        width: 350px;
+        height: 48px;
+        cursor: pointer;
+        transition: all ease .5s;
+        &:hover {
+            background-color: $aboutColor;
+            color: $footerColor;
+        }
+        &:active {
+            background-color: $footerColor;
+            color: $aboutColor;
+        }
+    }
+    &__burger-menu {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        transition: all ease .4s;
+        &:active {
+            transform: scale(.9);
+        }
+        &:active {
+            color: $aboutColor;
+        }
+        &:active>p {
+            color: $aboutColor;
+        }
+    }
+    &__menu-title {
+        position: absolute;
+        top: 0;
+        left: 64px;
+        @include reset;
+        @include buttonsDesctop;
+        transition: all ease .6s;
+    }
+    &__span {
+        height: 3px;
+        background-color: $footerColor;
+        position: absolute;
+        width: 100%;
+        &::after {
+            content: '';
+            height: 3px;
+            background-color: $footerColor;
+            position: absolute;
+            width: 100%;
+            top: 12px;
+        }
+        &::before {
+            content: '';
+            height: 3px;
+            background-color: $footerColor;
+            position: absolute;
+            width: 100%;
+            top: 24px;
+        }
+    }
+}

@@ -2,3 +2,126 @@
     margin: 0;
     padding: 0;
 }
+
+/// desctop
+@mixin headlineDesctop {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+}
+
+@mixin leadDesctop {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #0A0A0A;
+}
+
+@mixin buttonsDesctop {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+}
+
+@mixin textDesctop {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #0A0A0A;
+}
+
+/// tablet 
+@mixin headlineTablet {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+}
+
+@mixin leadTablet {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 44px;
+    color: #0A0A0A;
+}
+
+@mixin buttonsTablet {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+}
+
+@mixin textTablet {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #0A0A0A;
+}
+
+/// mobile 
+@mixin headlineMobile {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+}
+
+@mixin leadMobile {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #0A0A0A;
+}
+
+@mixin buttonMobile {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+}
+
+@mixin textMobile {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0A0A0A;
+}

@@ -1,3 +1,228 @@
 @import url(../vendor/normalize.css);
 @import url(../vendor/font.css);
+.page {
+  min-width: 320px;
+  min-height: 100vh;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  font-family: "Prompt", "Inter", Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+.header {
+  min-height: 900px;
+  background-color: #E7E7E2;
+}
+
+.header__conteiner {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/headerdude.svg");
+  min-height: 900px;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  background-size: contain;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__nav {
+  background-color: #0A0A0A;
+  position: absolute;
+  top: -830px;
+  left: 0;
+  z-index: 30;
+  -webkit-transition: top ease .8s;
+  transition: top ease .8s;
+}
+
+.header__nav-open {
+  top: 0;
+}
+
+.header__list {
+  position: relative;
+  min-height: 810px;
+  width: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 80px;
+}
+
+.header__nav-close-button {
+  position: absolute;
+  background-image: url("../images/crest.svg");
+  width: 48px;
+  height: 48px;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  z-index: 50;
+}
+
+.header__list-item {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.header__main-theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+}
+
+.header__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  margin-bottom: 32px;
+}
+
+.header__button {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+  text-align: center;
+  width: 350px;
+  height: 48px;
+  cursor: pointer;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.header__button:hover {
+  background-color: #FFFFFF;
+  color: #0A0A0A;
+}
+
+.header__button:active {
+  background-color: #0A0A0A;
+  color: #FFFFFF;
+}
+
+.header__burger-menu {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  -webkit-transition: all ease .4s;
+  transition: all ease .4s;
+}
+
+.header__burger-menu:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.header__burger-menu:active {
+  color: #FFFFFF;
+}
+
+.header__burger-menu:active > p {
+  color: #FFFFFF;
+}
+
+.header__menu-title {
+  position: absolute;
+  top: 0;
+  left: 64px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #0A0A0A;
+  -webkit-transition: all ease .6s;
+  transition: all ease .6s;
+}
+
+.header__span {
+  height: 3px;
+  background-color: #0A0A0A;
+  position: absolute;
+  width: 100%;
+}
+
+.header__span::after {
+  content: '';
+  height: 3px;
+  background-color: #0A0A0A;
+  position: absolute;
+  width: 100%;
+  top: 12px;
+}
+
+.header__span::before {
+  content: '';
+  height: 3px;
+  background-color: #0A0A0A;
+  position: absolute;
+  width: 100%;
+  top: 24px;
+}
 /*# sourceMappingURL=index.css.map */
