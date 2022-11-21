@@ -17,3 +17,11 @@ closeBurgerMenuButton.addEventListener('click', () => {
         menu.closeMenu()
     })
     ////////////////
+
+
+
+
+document.addEventListener('scroll', () => {
+
+
+})

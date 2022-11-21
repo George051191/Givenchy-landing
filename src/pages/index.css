@@ -225,4 +225,111 @@
   width: 100%;
   top: 24px;
 }
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-row-gap: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about__title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #0A0A0A;
+}
+
+.about__subtitle {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #0A0A0A;
+}
+
+.about_type-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.about__article {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #0A0A0A;
+  color: #0a0a0a;
+  font-family: Prompt;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 44px;
+  margin: 0;
+  padding: 0;
+  max-width: 700px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 100%;
+  position: relative;
+}
+
+.about__article::after {
+  content: 'Matthew M. Williams.';
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.about__image-first {
+  width: 98%;
+  position: relative;
+  right: 210px;
+  z-index: -1;
+}
+
+.about__image-second {
+  width: 86%;
+}
+
+.about__image-third {
+  width: 122%;
+  position: relative;
+  right: 213px;
+  z-index: -1;
+}
 /*# sourceMappingURL=index.css.map */
