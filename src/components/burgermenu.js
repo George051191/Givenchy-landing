@@ -6,12 +6,9 @@ export class BurgerMenu {
     }
 
     openMenu() {
-
         this.navPanel.classList.add(this.openStyles);
-
     }
     closeMenu() {
-        console.log('ffff')
         this.navPanel.classList.remove(this.openStyles);
     }
 }
