@@ -319,6 +319,24 @@
       align-self: center;
 }
 
+.about__letter {
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #0A0A0A;
+  opacity: 0;
+  -webkit-transition: opacity ease 5s;
+  transition: opacity ease 5s;
+}
+
+.about__letter-visible {
+  opacity: 1;
+}
+
 .about__article {
   margin: 0;
   padding: 0;
@@ -336,6 +354,7 @@
   line-height: 44px;
   margin: 0;
   padding: 0;
+  min-height: 150px;
   max-width: 700px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;

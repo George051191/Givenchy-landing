@@ -6,6 +6,9 @@ export class About {
         this.thirdBlockText = thirdBlockText;
         this.endBlockText = endBlockText;
     }
+
+
+
     pushText() {
         if (window.pageYOffset > 90) {
             this.firstBlockText.classList.add('about_type_visible')
