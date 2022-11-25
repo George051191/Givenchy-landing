@@ -309,6 +309,9 @@
   font-size: 20px;
   line-height: 32px;
   color: #0A0A0A;
+}
+
+.about__subtitle-animated {
   -webkit-animation: 3s beautyText linear;
           animation: 3s beautyText linear;
 }
@@ -328,9 +331,9 @@
   font-size: 32px;
   line-height: 44px;
   color: #0A0A0A;
+  -webkit-transition: opacity ease 2s;
+  transition: opacity ease 2s;
   opacity: 0;
-  -webkit-transition: opacity ease 5s;
-  transition: opacity ease 5s;
 }
 
 .about__letter-visible {
@@ -368,6 +371,13 @@
   position: absolute;
   top: 100%;
   left: 0;
+  -webkit-transition: opacity ease 8s;
+  transition: opacity ease 8s;
+  opacity: 0;
+}
+
+.about__article_type_visible::after {
+  opacity: 1;
 }
 
 .about__image-first {

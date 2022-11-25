@@ -42,6 +42,8 @@
     &__subtitle {
         @include reset;
         @include textDesctop;
+    }
+    &__subtitle-animated {
         animation: 3s beautyText linear;
     }
     &_type-center {
@@ -50,6 +52,8 @@
     &__letter {
         @include reset;
         @include leadDesctop;
+        transition: opacity ease 2s;
+        opacity: 0;
     }
     &__letter-visible {
         opacity: 1;
@@ -75,6 +79,13 @@
             position: absolute;
             top: 100%;
             left: 0;
+            transition: opacity ease 8s;
+            opacity: 0;
+        }
+    }
+    &__article_type_visible {
+        &::after {
+            opacity: 1;
         }
     }
     &__image-first {
