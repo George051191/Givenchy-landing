@@ -1,0 +1,75 @@
+.footer {
+    min-height: 372px;
+    background-color: $footerColor;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__conteiner {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 700px;
+    }
+    &__title {
+        @include reset;
+        @include textTablet;
+        color: $aboutColor;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__form {
+        display: flex;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    &__email-input {
+        width: 65%;
+        height: 48px;
+        border: 1px solid #666666;
+        box-sizing: border-box;
+        background-color: inherit;
+        width: calc(100% - 108px);
+        padding-left: 24px;
+        color: #666666;
+    }
+    &::placeholder {
+        @include buttonMobile;
+        color: #666666;
+    }
+    &__button {
+        width: 108px;
+    }
+    &__label {
+        @include textMobile;
+        @include reset;
+        color: $aboutColor;
+        display: inline;
+    }
+    &__copyright {
+        @include textTablet;
+        @include reset;
+        color: $aboutColor;
+        margin-top: 40px;
+        text-align: center;
+    }
+    &__switcher {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+        &+label {
+            display: inline-flex;
+            align-items: center;
+            align-items: center;
+            display: inline-flex;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $aboutColor;
+            position: relative;
+            top: 6px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &:checked+label {
+            background-image: url('../images/galka.svg');
+        }
+    }
+    &__hide-input {}
+}

@@ -1,6 +1,21 @@
 import './index.css';
 import { BurgerMenu } from '../components/burgermenu';
 import { About } from '../components/about';
+import { Gallery } from '../components/gallery';
+import image1 from '../images/photo9.svg'
+import image2 from '../images/photo10.svg'
+import image3 from '../images/photo11.svg'
+import image4 from '../images/photo12.svg'
+import image5 from '../images/photo13.svg'
+import image6 from '../images/photo14.svg'
+import image7 from '../images/photo1.svg'
+import image8 from '../images/photo2.svg'
+import image9 from '../images/photo3.svg'
+import image10 from '../images/photo4.svg'
+import image11 from '../images/photo6.svg'
+import image12 from '../images/photo7.svg'
+import image13 from '../images/photo8.svg'
+
 
 ///////////
 const burgerButton = document.querySelector('.header__burger-menu');
@@ -22,6 +37,8 @@ closeBurgerMenuButton.addEventListener('click', () => {
     })
     ////////////////
 
+
+///////////
 const text = '“To me, fashion expresses a point of view where formality and informality, construction and comfort co-exist. My ethos is about the luxury of infusing clothes with your own personality, not being worn by them”'
 const lastText = '“In each of these portraits, a strong character wears a look that reflects who they are: they are the ones who bring the clothes to life.”'
 const array = [...text];
@@ -48,9 +65,8 @@ const aboutSection = new About(
 let isScrollingEnd = true;
 let isScrolling = true;
 document.addEventListener('scroll', () => {
-    console.log(window.pageYOffset)
     if (window.pageYOffset > 400 && isScrolling) {
-        aboutSection.makeBeautyText(array, secondBlockText)
+        aboutSection.makeBeautyText('v', array, secondBlockText, 'o')
         isScrolling = false;
     }
     if (window.pageYOffset > 90) {
@@ -59,42 +75,18 @@ document.addEventListener('scroll', () => {
     if (window.pageYOffset > 800) {
         aboutSection.makeTextScale(thirdBlockText);
     }
-    if (window.pageYOffset > 1700 && isScrollingEnd) {
-        aboutSection.makeBeautyText(lastBlockText, endBlockText)
+    if (window.pageYOffset > 1900 && isScrollingEnd) {
+        aboutSection.makeBeautyText('l', lastBlockText, endBlockText, 'z')
         isScrollingEnd = false;
     }
 })
 
 
+////////////
 
+const imagesArray = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11, image12, image13]
+const nodeArray = document.querySelectorAll('.looks__image')
+const gallery = new Gallery(nodeArray, imagesArray);
 
-
-
-/* const makeBeautyText = () => {
-
-
-    const bl = document.querySelector('#pre');
-
-
-
-    for (let i = 0; i < array.length; i++) {
-
-        const style = array[i].match(/[a-zA-z]/) ? array[i] + i : `${'l'+ i}`;
-
-        const txt = document.createTextNode(array[i])
-        const letter = document.createElement('span');
-
-        letter.classList.add('about__letter', style)
-        letter.append(txt)
-
-        bl.append(letter)
-
-        setTimeout(() => document.querySelector(`.${style}`).classList.add('about__letter-visible'), i * 10)
-
-    }
-    document.querySelector('.about__article').classList.add('about__article_type_visible')
-}
-
-
-
-makeBeautyText() */
+setInterval(() => gallery.pushImages(), 4000);
+//////

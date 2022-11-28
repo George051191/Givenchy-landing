@@ -14,9 +14,9 @@ export class About {
         this.animatedClass = animatedClass;
     }
 
-    makeBeautyText(array, el) {
+    makeBeautyText(specLetter, array, el, specsymb) {
         for (let i = 0; i < array.length; i++) {
-            const style = array[i].match(/[a-zA-z]/) ? array[i] + i : `${'l'+ i}`;
+            const style = array[i].match(/[a-zA-z]/) ? array[i] + i + specLetter : 'stl' + (specsymb + i || i);
             const txt = document.createTextNode(array[i])
             const letter = document.createElement('span');
             letter.classList.add(this.classForOriginalText, style);
@@ -24,7 +24,7 @@ export class About {
             el.append(letter);
             setTimeout(() => document.querySelector(`.${style}`).classList.add(this.classForBeautyText), i * 10)
         }
-        this.secondBlockText.classList.add(this.classForBeautyAuthorName)
+        el.classList.add(this.classForBeautyAuthorName)
     }
 
     makeTextScale(el) {
