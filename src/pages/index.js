@@ -2,6 +2,7 @@ import './index.css';
 import { BurgerMenu } from '../components/burgermenu';
 import { About } from '../components/about';
 import { Gallery } from '../components/gallery';
+import { Form } from '../components/form';
 import image1 from '../images/photo9.svg'
 import image2 from '../images/photo10.svg'
 import image3 from '../images/photo11.svg'
@@ -15,6 +16,7 @@ import image10 from '../images/photo4.svg'
 import image11 from '../images/photo6.svg'
 import image12 from '../images/photo7.svg'
 import image13 from '../images/photo8.svg'
+
 
 
 ///////////
@@ -90,3 +92,23 @@ const gallery = new Gallery(nodeArray, imagesArray);
 
 setInterval(() => gallery.pushImages(), 4000);
 //////
+
+const input = document.querySelector('.footer__email-input');
+const checkBox = document.querySelector('.footer__switcher');
+const button = document.querySelector('.footer__button');
+
+const form = new Form(input, checkBox, button)
+
+input.addEventListener('input', () => {
+    form.changeButtonState()
+})
+
+checkBox.addEventListener('input', () => {
+    form.changeButtonState()
+})
+
+const headerButton = document.querySelector('.header__button')
+headerButton.addEventListener('click', () => {
+        input.scrollIntoView({ behavior: 'smooth' })
+    })
+    ////////
