@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+@mixin animatedTransition {
+    transition: all ease .3s;
+}
+
 /// desctop
 @mixin headlineDesctop {
     font-family: 'Prompt';

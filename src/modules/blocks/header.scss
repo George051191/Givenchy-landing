@@ -1,6 +1,10 @@
 .header {
     min-height: 900px;
     background-color: $headercolor;
+    @include animatedTransition;
+    @media screen and (max-width: 768px) {
+        min-height: 646px;
+    }
     &__conteiner {
         position: relative;
         margin-left: auto;
@@ -14,6 +18,10 @@
         display: flex;
         justify-content: right;
         align-items: center;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            min-height: 646px;
+        }
     }
     &__nav {
         background-color: $footerColor;
@@ -59,11 +67,19 @@
         display: flex;
         flex-direction: column;
         width: 49%;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            width: 64%;
+        }
     }
     &__title {
         @include reset;
         @include headlineDesctop;
         margin-bottom: 32px;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            @include headlineTablet;
+        }
     }
     &__button {
         @include reset;
