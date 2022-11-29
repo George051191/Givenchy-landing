@@ -6,7 +6,7 @@ export class Form {
     }
 
     _checkValidity() {
-        return this.input.value !== '' ? this.input.validity.valid : false
+        return this.input.value !== '' ? /[a-zA-Z0-9.+-_]+@[a-zA-Z0-9]+\.[a-z]{2,6}\b/.test(this.input.value) : false
     }
 
     _checkAgreementState() {
