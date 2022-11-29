@@ -112,3 +112,5 @@ headerButton.addEventListener('click', () => {
         input.scrollIntoView({ behavior: 'smooth' })
     })
     ////////
+
+//const style = array[i].match(/[a-zA-z]/) ? array[i] + i + specLetter : 'stl' + (specsymb + i || i);

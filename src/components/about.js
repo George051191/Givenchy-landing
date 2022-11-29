@@ -16,7 +16,7 @@ export class About {
 
     makeBeautyText(specLetter, array, el, specsymb) {
         for (let i = 0; i < array.length; i++) {
-            const style = array[i].match(/[a-zA-z]/) ? array[i] + i + specLetter : 'stl' + (specsymb + i || i);
+            const style = !!array[i].match(/[a-zA-z]/) ? array[i] + i + specLetter : 'stl' + (specsymb + i || i);
             const txt = document.createTextNode(array[i])
             const letter = document.createElement('span');
             letter.classList.add(this.classForOriginalText, style);
