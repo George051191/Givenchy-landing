@@ -45,6 +45,11 @@
         list-style: none;
         @include reset;
         gap: 80px;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            width: 334px;
+            min-height: 480px;
+        }
     }
     &__nav-close-button {
         position: absolute;

@@ -7,6 +7,7 @@
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+    @include animatedTransition;
     &_type_invisible {
         position: relative;
         &::after {
@@ -38,10 +39,15 @@
     &__title {
         @include reset;
         @include headlineDesctop;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            @include headlineTablet;
+        }
     }
     &__subtitle {
         @include reset;
         @include textDesctop;
+        @include animatedTransition;
     }
     &__subtitle-animated {
         animation: 3s beautyText linear;
@@ -74,6 +80,7 @@
         align-self: center;
         width: 100%;
         position: relative;
+        @include animatedTransition;
         &::after {
             content: 'Matthew M. Williams.';
             position: absolute;
@@ -81,6 +88,9 @@
             left: 0;
             transition: opacity ease 8s;
             opacity: 0;
+        }
+        @media screen and (max-width: 768px) {
+            bottom: 45px;
         }
     }
     &__article_type_visible {
@@ -93,15 +103,30 @@
         position: relative;
         right: 210px;
         z-index: -1;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            right: 140px;
+        }
     }
     &__image-second {
         width: 86%;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            align-self: center;
+        }
     }
     &__image-third {
         width: 122%;
         position: relative;
         right: 213px;
         z-index: -1;
+        @include animatedTransition;
+        @media screen and (max-width: 768px) {
+            right: 80px;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        grid-row-gap: 70px;
     }
 }
 
