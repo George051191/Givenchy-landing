@@ -26,6 +26,12 @@
   }
 }
 
+@media screen and (max-width: 520px) {
+  .header {
+    min-height: 426px;
+  }
+}
+
 .header__conteiner {
   position: relative;
   margin-left: auto;
@@ -52,6 +58,26 @@
 @media screen and (max-width: 768px) {
   .header__conteiner {
     min-height: 646px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header__conteiner {
+    min-height: 426px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header__conteiner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .header__conteiner {
+    background-size: cover;
   }
 }
 
@@ -147,6 +173,12 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .header__main-theme {
+    width: 88%;
+  }
+}
+
 .header__title {
   margin: 0;
   padding: 0;
@@ -170,6 +202,19 @@
     font-weight: 500;
     font-size: 32px;
     line-height: 40px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header__title {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #0A0A0A;
@@ -207,6 +252,21 @@
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 580px) {
+  .header__button {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+    color: #fff;
+    width: 280px;
+  }
+}
+
 .header__burger-menu {
   width: 48px;
   height: 48px;
@@ -231,6 +291,13 @@
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 580px) {
+  .header__burger-menu {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .header__menu-title {
   position: absolute;
   top: 0;
@@ -247,6 +314,21 @@
   color: #0A0A0A;
   -webkit-transition: all ease .6s;
   transition: all ease .6s;
+}
+
+@media screen and (max-width: 580px) {
+  .header__menu-title {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0A0A0A;
+    left: 40px;
+    top: 5px;
+  }
 }
 
 .header__span {

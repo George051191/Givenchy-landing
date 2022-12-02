@@ -5,6 +5,9 @@
     @media screen and (max-width: 768px) {
         min-height: 646px;
     }
+    @media screen and (max-width: 520px) {
+        min-height: 426px;
+    }
     &__conteiner {
         position: relative;
         margin-left: auto;
@@ -21,6 +24,15 @@
         @include animatedTransition;
         @media screen and (max-width: 768px) {
             min-height: 646px;
+        }
+        @media screen and (max-width: 520px) {
+            min-height: 426px;
+        }
+        @media screen and (max-width: 450px) {
+            justify-content: center;
+        }
+        @media screen and (max-width: 340px) {
+            background-size: cover;
         }
     }
     &__nav {
@@ -76,6 +88,9 @@
         @media screen and (max-width: 768px) {
             width: 64%;
         }
+        @media screen and (max-width:400px) {
+            width: 88%;
+        }
     }
     &__title {
         @include reset;
@@ -84,6 +99,9 @@
         @include animatedTransition;
         @media screen and (max-width: 768px) {
             @include headlineTablet;
+        }
+        @media screen and (max-width: 580px) {
+            @include headlineMobile;
         }
     }
     &__button {
@@ -104,6 +122,11 @@
             background-color: $footerColor;
             color: $aboutColor;
         }
+        @media screen and (max-width: 580px) {
+            @include buttonMobile;
+            color: #fff;
+            width: 280px;
+        }
     }
     &__burger-menu {
         width: 48px;
@@ -122,6 +145,10 @@
         &:active>p {
             color: $aboutColor;
         }
+        @media screen and (max-width: 580px) {
+            width: 24px;
+            height: 24px;
+        }
     }
     &__menu-title {
         position: absolute;
@@ -130,6 +157,11 @@
         @include reset;
         @include buttonsDesctop;
         transition: all ease .6s;
+        @media screen and (max-width: 580px) {
+            @include buttonMobile;
+            left: 40px;
+            top: 5px;
+        }
     }
     &__span {
         height: 3px;
