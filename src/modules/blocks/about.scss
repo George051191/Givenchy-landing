@@ -43,11 +43,17 @@
         @media screen and (max-width: 768px) {
             @include headlineTablet;
         }
+        @media screen and (max-width:480px) {
+            @include headlineMobile;
+        }
     }
     &__subtitle {
         @include reset;
         @include textDesctop;
         @include animatedTransition;
+        @media screen and (max-width: 480px) {
+            @include textMobile;
+        }
     }
     &__subtitle-animated {
         animation: 3s beautyText linear;
@@ -60,6 +66,9 @@
         @include leadDesctop;
         transition: opacity ease 2s;
         opacity: 0;
+        @media screen and (max-width: 650px) {
+            @include leadMobile;
+        }
     }
     &__letter-visible {
         opacity: 1;
@@ -92,6 +101,19 @@
         @media screen and (max-width: 768px) {
             bottom: 45px;
         }
+        @media screen and (max-width: 650px) {
+            @include leadMobile;
+        }
+        @media screen and (max-width: 480px) {
+            &:first-of-type {
+                top: -12px;
+                order: 3;
+            }
+            &:last-of-type {
+                order: 7;
+                top: -12px;
+            }
+        }
     }
     &__article_type_visible {
         &::after {
@@ -107,12 +129,29 @@
         @media screen and (max-width: 768px) {
             right: 140px;
         }
+        @media screen and (max-width: 650px) {
+            right: 50px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 280px;
+            order: 2;
+            justify-self: center;
+            position: initial;
+        }
     }
     &__image-second {
         width: 86%;
         @include animatedTransition;
         @media screen and (max-width: 768px) {
             align-self: center;
+        }
+        @media screen and (max-width: 480px) {
+            width: 280px;
+            order: 4;
+            justify-self: center;
+            &+article {
+                order: 5;
+            }
         }
     }
     &__image-third {
@@ -124,9 +163,24 @@
         @media screen and (max-width: 768px) {
             right: 80px;
         }
+        @media screen and (max-width: 665px) {
+            width: 280px;
+        }
+        @media screen and (max-width: 480px) {
+            width: 280px;
+            order: 6;
+            position: initial;
+            justify-self: center;
+        }
     }
     @media screen and (max-width: 768px) {
         grid-row-gap: 70px;
+    }
+    @media screen and (max-width: 480px) {
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 }
 
