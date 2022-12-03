@@ -1,5 +1,5 @@
 
-<h2 align="center"><img src="./src/images/123.png" width="600px" alt="Шапка"></h2>
+<h2 align="center"><img src="./src/images/123.png" width="600px" height="300px" alt="Шапка"></h2>
 
 # Givenchy-landing
 
