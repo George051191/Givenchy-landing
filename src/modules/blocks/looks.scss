@@ -13,6 +13,9 @@
         @media screen and (max-width: 768px) {
             @include headlineTablet;
         }
+        @media screen and (max-width: 480px) {
+            @include headlineMobile;
+        }
     }
     &__gallery {
         list-style: none;
@@ -27,6 +30,10 @@
             grid-auto-rows: 0;
             overflow-y: hidden;
         }
+        @media screen and (max-width:480px) {
+            grid-auto-rows: auto;
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
     &__item {
         //height: 220px;
@@ -34,5 +41,9 @@
     &__image {
         max-width: 100%;
         display: block;
+    }
+    @media screen and (max-width: 480px) {
+        padding-bottom: 40px;
+        gap: 20px;
     }
 }

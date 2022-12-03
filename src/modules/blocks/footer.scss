@@ -11,6 +11,9 @@
         @media screen and (max-width: 768px) {
             max-width: 468px;
         }
+        @media screen and (max-width: 490px) {
+            max-width: 280px;
+        }
     }
     &__title {
         @include reset;
@@ -18,11 +21,20 @@
         color: $aboutColor;
         text-align: center;
         margin-bottom: 40px;
+        @include animatedTransition;
+        @media screen and (max-width: 490px) {
+            @include textMobile;
+            color: #fff;
+        }
     }
     &__form {
         display: flex;
         width: 100%;
         margin-bottom: 40px;
+        @include animatedTransition;
+        @media screen and (max-width: 490px) {
+            flex-direction: column;
+        }
     }
     &__email-input {
         width: 65%;
@@ -33,6 +45,10 @@
         width: calc(100% - 108px);
         padding-left: 24px;
         color: #666666;
+        @include animatedTransition;
+        @media screen and (max-width: 490px) {
+            width: 100%;
+        }
     }
     &::placeholder {
         @include buttonMobile;
@@ -40,6 +56,11 @@
     }
     &__button {
         width: 108px;
+        @include animatedTransition;
+        @media screen and (max-width: 490px) {
+            width: 100%;
+            height: 44px;
+        }
     }
     &__label {
         @include textMobile;
@@ -53,6 +74,11 @@
         color: $aboutColor;
         margin-top: 40px;
         text-align: center;
+        @include animatedTransition;
+        @media screen and (max-width: 490px) {
+            @include textMobile;
+            color: #fff;
+        }
     }
     &__switcher {
         position: absolute;
