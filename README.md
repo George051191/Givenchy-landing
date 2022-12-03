@@ -1,4 +1,4 @@
-![](https://github.com/George051191/Givenchy-landing/main/src/images/123)
+![](https://github.com/George051191/Givenchy-landing/main/src/images/123.png)
 
 # Givenchy-landing
 
