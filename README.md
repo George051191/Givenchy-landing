@@ -1,5 +1,5 @@
-![](https://github.com/George051191/Givenchy-landing/main/src/images/123.png)
-<h2 align="center"><img src="/images/123.png" width="600px" alt="Шапка"></h2>
+
+<h2 align="center"><img src="./images/123.png" width="600px" alt="Шапка"></h2>
 
 # Givenchy-landing
 
